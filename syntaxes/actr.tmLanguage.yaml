@@ -217,6 +217,15 @@ repository:
           name: entity.name.type.buffer
         '3':
           name: keyword
+      match: (\*)([a-z\-]+)(>)
+      name: meta.production.buffer.modification
+    - captures:
+        '1':
+          name: keyword.control
+        '2':
+          name: entity.name.type.buffer
+        '3':
+          name: keyword
       match: (-)([a-z\-]+)(>)
       name: meta.production.buffer.clear
     - captures:
